@@ -15,7 +15,6 @@ services:
     build:
       context: ./app
       args:
-        APP_VERSION: ${APP_VERSION}
         TOMCAT_VERSION: ${TOMCAT_VERSION}
     environment:
       MYSQL_HOST: db
