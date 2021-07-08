@@ -11,7 +11,7 @@ RUN apt-get update && \
 RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 RUN TOMCAT_MAJOR_VERSION=$(echo "${TOMCAT_VERSION}" | cut -d '.' -f 1) && \
-    curl -O https://mirror.csclub.uwaterloo.ca/apache/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
+    curl -O https://muug.ca/mirror/apache-dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
     tar xvfz apache*.tar.gz && \
     mv apache-tomcat-${TOMCAT_VERSION}/* /opt/tomcat/.
 
