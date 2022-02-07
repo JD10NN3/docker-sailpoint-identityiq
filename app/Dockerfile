@@ -1,5 +1,5 @@
 FROM debian:buster
-LABEL maintainer=contact@jodionne.com
+LABEL maintainer=""
 
 ARG TOMCAT_VERSION 
 
